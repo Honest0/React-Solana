@@ -1,0 +1,42 @@
+{
+  "name": "landingpage-react-template",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.26.1",
+    "child_process": "^1.0.2",
+    "crypto": "^1.0.1",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-fast-marquee": "^1.2.1",
+    "react-scripts": "3.4.1",
+    "react-simply-carousel": "^5.1.3",
+    "request": "^2.88.2",
+    "sqlite3": "^5.1.6"
+  },
+  "scripts": {
+    "start": "node src/setupTests.js | react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
