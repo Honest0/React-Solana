@@ -1,0 +1,17 @@
+namespace: landingpage-react-template
+landingpage-react-template:
+  defines: runnable
+  metadata:
+    name: landingpage-react-template
+    description: A landing page template written in React
+    icon: https://emojiapi.dev/api/v1/globe_with_meridians.svg
+  containers:
+    landingpage-react-template:
+      build: .
+  services:
+    landingpage-react-template-3000/tcp:
+      container: landingpage-react-template
+      port: 3000
+      host-port: 3000
+      publish: false
+      protocol: TCP
