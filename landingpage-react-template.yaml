@@ -1,0 +1,28 @@
+namespace: landingpage-react-template
+landingpage-react-template:
+  defines: runnable
+  metadata:
+    name: landingpage-react-template
+    description: A landing page for a project, created using React.
+    icon: https://reactjs.org/logo-og.png
+  containers:
+    landingpage-react-template:
+      build: .
+  services:
+    landingpage-react-template-3000/tcp:
+      container: landingpage-react-template
+      port: 3000
+      host-port: 3000
+      publish: false
+      protocol: TCP
+  variables:
+    node-env:
+      env: NODE_ENV
+      description: >-
+        Defines the environment in which an application runs. Use 'development'
+        for development mode and 'production' for production mode.
+      value: '!!!SETME!!!'
+    public-url:
+      env: PUBLIC_URL
+      description: Public URL of the app, used when the app is deployed.
+      value: '!!!SETME!!!'
